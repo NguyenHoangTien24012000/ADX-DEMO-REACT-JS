@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/fonts/Roboto-Thin.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/fonts/Roboto-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../src/fonts/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 68px;
+  background: #2589eb;
+  backdrop-filter: blur(4px);
+}
+.header .logo {
+  width: 71px;
+  height: 45.64px;
+  margin: 70px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+.header .navbar ul {
+  list-style: none;
+  display: flex;
+}
+.header .navbar ul a {
+  margin: 26px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  align-items: center;
+  color: #ffffff;
+  opacity: 0.8;
+  font-weight: 300;
+}
+.header .navbar ul a.active {
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  color: #fff;
+  opacity: 1;
+}
+.header .search-container {
+  position: absolute;
+  right: 70px;
+  top: 11px;
+  background-color: #fff;
+  width: 402px;
+  height: 46px;
+  border-radius: 30px;
+}
+.header .search-container .search__input {
+  width: 255px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+.header .search-container .search__input:focus {
+  border: none;
+}
+.header .search-container .search__input::placeholder {
+  color: #212121;
+  font-size: 14px;
+}
+.header .search-container .search-down {
+  cursor: pointer;
+}
+.header .search-container .button-search {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 68px;
+  height: 42px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffbd47;
+  cursor: pointer;
+}
+
+.content {
+  width: 90%;
+}
+.content .content-left {
+  width: 33.333%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 178px;
+  background-color: #4b4b4b;
+}
+.footer .footer-logo {
+  position: absolute;
+  left: 26.04%;
+  top: 11.24%;
+}
+.footer .logo-text {
+  position: absolute;
+  left: 26.04%;
+  top: 61.8%;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 10px;
+  color: #ffffff;
+}
+.footer .logo-bottom-left {
+  position: absolute;
+  left: 26.04%;
+  top: 72.23%;
+}
+.footer .logo-bottom-right {
+  position: absolute;
+  left: 29.84%;
+  top: 68.54%;
+}
+/*# sourceMappingURL=style.css.map */
