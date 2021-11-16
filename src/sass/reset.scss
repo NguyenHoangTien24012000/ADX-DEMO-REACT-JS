@@ -1,24 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 @font-face {
-    font-family: "Roboto";
-    src: url("../src/fonts/Roboto-Thin.ttf");
-    font-style: normal;
-    font-weight: 300; 
-}
-
-
-@font-face {
-    font-family: "Roboto";
-    src: url('../src/fonts/Roboto-Medium.ttf');
-    font-style: normal;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url('../src/fonts/Roboto-Bold.ttf');
-    font-style: normal;
-    font-weight: bold;
+    font-family:"Encode Sans";
+    src: url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
 }
 
 * {
@@ -27,8 +10,7 @@
 }
 
 body {
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-
 
