@@ -1,16 +1,12 @@
-
 .content {
     display: flex;
     background-color: $color-black-3;
-    margin-bottom: 22px;
+    // margin-bottom: 22px;
 }
 .content-left {
-    padding-left: 40px;
-    padding-top: 22px;
-    height: 1000px;
     width: 40%;
-    display: flex;
-    flex-wrap: wrap;
+    max-height: 1000px;
+    // height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y;
     &::-webkit-scrollbar {
@@ -27,29 +23,56 @@
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
         box-shadow: inset 0 0 5px grey;
     }
+    padding-top: 22px;
+    padding-left: 40px;
+    .content-common {
+        display: flex;
+        flex-wrap: wrap;
+       
+   
+    }
+   
 }
 .content-right {
     width: 64%;
-    margin: 25px 40px;
-    .text-content{
+    padding: 25px 40px;
+    overflow: hidden;
+    .text-content {
         @include styleText($color-black-0, $fs-0, $fw-2);
         margin-bottom: 46px;
     }
-    .content-carousel{
-        
+    .content-carousel {
+        width: 100%;
+        position: relative;
+        justify-content: flex-start;
+    }
+    .slider-item {
+        width: 100%;
+        &.space-right {
+            margin-right: 50px;
+        }
+    }
+    .content-slider {
+        transition: all 0.5s;
+        display: flex;
+        width: 315%;
+        // transform: translateX(-200px);
     }
     .selection-demo {
-        padding: 0 40px;
+        justify-content: center;
         display: flex;
         align-items: center;
-        justify-content: space-between;
         margin: auto;
         min-height: 600px;
         background-color: $color-black-2;
-        border-radius:$border-radius-2;
+        border-radius: $border-radius-2;
         margin-bottom: 32px;
     }
     .arrow-left {
+        position: absolute;
+        cursor: pointer;
+        top: 34%;
+        left: 40px;
         width: 32px;
         height: 32px;
         line-height: 37px;
@@ -57,8 +80,13 @@
         background-color: $color-white-0;
         text-align: center;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     }
     .arrow-right {
+        position: absolute;
+        cursor: pointer;
+        top: 34%;
+        right: 40px;
         width: 32px;
         height: 32px;
         line-height: 37px;
@@ -66,82 +94,60 @@
         background-color: $color-white-0;
         text-align: center;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     }
-    h2 {
-        @include styleText(#000,$fs-1, $fw-1);
+    .selection-demo-text {
+        @include styleText(#000, $fs-1, $fw-1);
     }
     .content-brand {
         background: $color-white-0;
         border-radius: $border-radius-1;
         box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     }
-    .brand-top{
+    .brand-top {
         display: flex;
-        padding-bottom: 14px;
+        padding: 17px 25px 14px 19px;
+        align-items: center;
     }
-    .brand-top-left{
-        margin-top: 17px;
-        margin-left: 19px;
-        h4{
-            font-size: 18px;
-            color: $color-black-0;
-            font-weight: bold;
+    .brand-top-left {
+        width: 60%;
+        h4 {
+            @include styleText($color-black-0, $fs-0 + 4, $fw-3);
             padding-bottom: 11px;
-
         }
-        p{
-            padding: 0;
+        p {
             color: $color-black-4;
             font-size: 14px;
+            @include styleText($color-black-4, $fs-0, $fw-1);
         }
     }
-    .brand-top-right{
-        width: 100%;
-        position: relative;
-    }
-    .button-link{
-        position: absolute;
-        right: 25px;
-        top: 22px;
-        button{
-            padding: 9px 16px;
-            border: none;
-            color: $color-white-0;
-            border-radius: 4px;
-            font-size: 14px;
-            background-color: $color-yellow-1;
-            display: flex;
-            align-items: center;
-        }
-    }
-    .brand-bottom{
-
-        border-top: 1px solid $color-black-2;
+    .brand-top-right {
+        width: 40%;
         display: flex;
-        p{
-            padding: 0;
-        }
-        padding: 19px 23px 21px 19px;
+        justify-content: flex-end;
     }
-    .brand-bottom-left{
-        width: 550px;
+    .brand-bottom {
+        border-top: 1px solid $color-black-2;
+        padding: 19px 23px 21px 19px;
+        display: flex;
+    }
+    .brand-bottom-left {
+        width: 35%;
         border-right: 1px solid $color-black-2;
-        p{
+        p {
             margin-bottom: 12px;
-            font-size: 14px;
-            font-weight: bold;
-            color: $color-black-0;
+            @include styleText($color-black-0, $fs-0, $fw-3);
         }
-        span{
+        span {
             color: $color-black-4;
         }
     }
-    .brand-bottom-right{
+    .brand-bottom-right {
+        width: 60%;
         margin-left: 19px;
-        p{
-            color: $color-black-0;
-            font-size: 14px;
+        p {
             line-height: 22px;
+            @include styleText($color-black-0, $fs-0, $fw-1);
         }
     }
 }

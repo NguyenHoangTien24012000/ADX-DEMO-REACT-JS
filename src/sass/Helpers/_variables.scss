@@ -18,6 +18,7 @@ $color-white-0:#fff;
 //font size
 $fs-0:14px;
 $fs-1:24px;
+$fs-2:8px;
 
 //font weight
 $fw-0:300;
@@ -40,3 +41,6 @@ $line-height-0:21px;
 $border-radius-0:30px;
 $border-radius-1:10px;
 $border-radius-2:16px;
+
+//breakpoints
+$breakpoints:( 'screen-1':1350px, 'extra-large':1200px, 'large':992px, 'medium':768px, 'small':576px);

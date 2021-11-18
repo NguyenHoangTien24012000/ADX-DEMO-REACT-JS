@@ -1,23 +1,19 @@
 
 .footer {
-    display: flex;
-    // width: 100%;
-    height: 178px;
     background-color: $color-gray-0;
-    padding: 20px 0 0px 400px;
-    .footer-logo {
-        // position: absolute;
-        // left: 26.04%;
-        // top: 11.24%;
-        margin-right: 110px;
+    padding-top: 20px;
+    padding-bottom: 27px;
+    .footer-content{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
     }
     .logo-text {
         font-family: "Encode Sans", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8px;
         line-height: 10px;
-        color: $color-white-0;
+        @include styleText($color-white-0, $fs-2, $fw-1);
         margin-top: 13px;
     }
     .logo-bottom {
@@ -31,16 +27,10 @@
         margin-top: 2px;
     }
     .footer-contact {
-        // position: absolute;
-        // left: 38.07%;
-        // top: 14.04%;
-        margin-right: 60px;
         h3 {
             font-family: "Encode Sans", sans-serif;
-            font-weight: 400;
-            font-size: 20px;
             line-height: 25px;
-            color: $color-white-0;
+            @include styleText($color-white-0, $fs-1 - 4, $fw-1 );
             margin-bottom: 14px;
         }
     }
@@ -53,10 +43,8 @@
         }
         p {
             font-family: "Encode Sans", sans-serif;
-            font-weight: 400;
-            font-size: 10px;
             line-height: 12px;
-            color: $color-white-0;
+            @include styleText($color-white-0, $fs-0 - 4, $fw-1);
             margin-left: 7px;
         }
     }
@@ -66,49 +54,51 @@
     }
     .logo-facebook {
         text-align: center;
-        margin-right: 5px;
         width: 21px;
         height: 21px;
-        line-height: 21px;
+        line-height: 24px;
         background-color: $color-blue-1;
         border-radius: 50%;
+        &.space-right{
+            margin-right: 5px;
+        }
     }
     .logo-skype {
         text-align: center;
-        margin-right: 5px;
         width: 21px;
         height: 21px;
-        line-height: 21px;
+        line-height: 24px;
         background-color: $color-blue-2;
         border-radius: 50%;
+        &.space-right{
+            margin-right: 5px;
+        }
     }
     .logo-zalo {
         text-align: center;
-        margin-right: 5px;
         width: 21px;
         height: 21px;
-        line-height: 21px;
+        line-height: 24px;
         background-color: $color-white-0;
         border-radius: 50%;
+        &.space-right{
+            margin-right: 5px;
+        }
     }
     .footer-address {
-        // position: absolute;
-        // left: 51.51%;
-        // top: 14.04%;
     }
     .address-shared {
         margin-bottom: 15px;
         h3 {
             font-family: "Encode Sans", sans-serif;
-            font-weight: 400;
-            font-size: 20px;
             line-height: 25px;
-            color: $color-white-0;
+            @include styleText($color-white-0, $fs-1 - 4, $fw-1);
             margin-bottom: 2px;
         }
     }
     .address-detail {
         display: flex;
+        align-items: center;
         img {
             width: 12px;
             height: 14px;
@@ -116,9 +106,7 @@
         }
         p {
             font-family: "Encode Sans", sans-serif;
-            font-weight: 400;
-            font-size: 10px;
-            color: $color-white-0;
+            @include styleText($color-white-0, $fs-0 - 4, $fw-1);
             margin-top: 5px;
         }
     }
