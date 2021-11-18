@@ -1,0 +1,83 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    // height: 68px;
+    background: $color-blue-0;
+    padding: $pd-0 $pd-1;
+    .header-content{
+        width: 100%;
+        display: flex;
+    }
+    .logo {
+        text-align: center;
+        padding-right:$pd-1 - 20px ;
+    }
+
+    .navbar {
+        width: 60%;
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            a {
+                margin: 0 $mg-0;
+                @include styleText($color-white-0, $fs-0 + 2px, $fw-0);
+                text-decoration: none;
+                align-items: center;
+                opacity: 0.8;
+                &.active {
+                    font-weight: $fw-3;
+                    opacity: 1;
+                }
+                &:hover{
+                    font-weight: $fw-3;
+                    opacity: 1;
+                }
+            }
+            span {
+                width: 1px;
+                border-right: 1px solid $color-white-0;
+            }
+        }
+    }
+    .search{
+        width: 30%;
+        margin: auto 0;
+    }
+    .search-container {
+        // width: 50%;
+        display: flex;
+        align-items: center;
+        background-color: $color-white-0;
+        border-radius: 30px;
+        .search__input {
+            width: 80%;
+            padding: 15px;
+            border-radius: $border-radius-0;
+            border: none;
+            outline: none;
+            &:focus {
+                border: none;
+            }
+            &::placeholder {
+                @include styleText($color-black-0, $fs-0, $fw-1);
+            }
+        }
+        .search-down {
+            cursor: pointer;
+            display: inline-block;
+            width: 10px;
+            margin-right: 30px;
+        }
+        .button-search {
+            width: 68px;
+            height: 43px;
+            border-radius: $border-radius-0;
+            border: none;
+            background-color: $color-yellow-0;
+            cursor: pointer;
+        }
+    }
+}

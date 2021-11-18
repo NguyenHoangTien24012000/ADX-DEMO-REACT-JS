@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 @font-face {
-    font-family:"Encode Sans";
+    font-family:"Encode Sans",sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap');
 }
 
@@ -11,6 +11,9 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: $fs-0;
+    color: $color-black-0;
+    line-height: $line-height-0;
     box-sizing: border-box;
 }
 
