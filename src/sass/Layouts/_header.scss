@@ -4,10 +4,11 @@
     align-items: center;
     // height: 68px;
     background: $color-blue-0;
-    padding: $pd-0 $pd-1;
+    padding: $pd-0 0;
     .header-content{
-        width: 100%;
+        width: 90%;
         display: flex;
+        margin: auto;
     }
     .logo {
         text-align: center;
@@ -17,13 +18,13 @@
 
     .navbar {
         width: 60%;
-        ul {
+        .navbar-list {
             list-style: none;
             display: flex;
             align-items: center;
             height: 100%;
             a {
-                margin: 0 $mg-0;
+                margin: 0 30px;
                 @include styleText($color-white-0, $fs-0 + 2px, $fw-0);
                 text-decoration: none;
                 align-items: center;
@@ -54,7 +55,7 @@
         background-color: $color-white-0;
         border-radius: 30px;
         .search__input {
-            width: 80%;
+            width: 100%;
             padding: 15px;
             border-radius: $border-radius-0;
             border: none;
@@ -81,5 +82,133 @@
             cursor: pointer;
         }
     }
-    @include responsive('screen-1')
+    .sidebar{
+        width: 40px;
+        height: 40px;
+        margin-top: 3px;
+        margin-left: 60px;
+        color: $color-white-0;
+        display: none;
+    }
+    .nav__overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.3);
+        display: none;
+        z-index: 5;
+    }
+    .navbar_mobile{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 320px;
+        max-width: 100%;
+        background-color: $color-white-0;
+        z-index: 10;
+        transition: all 0.5s;
+        transform: translateX(100%);
+        .navbar-list-mobile{
+            margin-top: 78px;
+            list-style: none;
+            .navbar-item-mobile{
+                a{
+                    font-size: $fs-0 + 2px;
+                    padding: 14px 20px;
+                    display: block;
+                    text-decoration: none;
+                    color: $color-blue-0;
+                }
+                // background-color: $color-gray-0;
+                margin-bottom: 10px;
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+                &:hover{
+                    background-color: $color-blue-0;
+                    a{
+                        color: $color-white-0;
+                        font-weight: $fw-3;
+                    }
+                }
+                &.active{
+                    background-color: $color-blue-0;
+                    a{
+                        color: $color-white-0;
+                        font-weight: $fw-3;
+                    }
+                }
+            }
+
+        }
+        .button-close-sidebar{
+            width: $fs-1 - 2;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            color: $color-blue-0;
+        }
+    }
+    @include responsive('screen-1'){
+        .navbar{
+            .navbar-list{
+                a{
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+    @include responsive('extra-large'){
+        .navbar{
+            .navbar-list{
+                a{
+                    margin: 0 15px;
+                    font-size: $fs-0;
+                }
+            }
+        }
+    }
+    
+    @include responsive('large'){
+       
+        .navbar{
+            width: 50%;
+            .navbar-list{
+                a{
+                    margin: 0 8px;
+                    font-size: $fs-0 - 2;
+                }
+            }
+        }
+        .search{
+            width: 40%; 
+        }
+       
+    }
+    
+    @include responsive('medium'){
+        .navbar{
+            .navbar-list{
+                display: none;
+            }
+            width: 0;
+        }
+        .search{
+            width: 60%; 
+        }
+        .sidebar{
+            display: block;
+        }
+        .navbar_mobile{
+            display: block;
+        }
+    }
+    @include responsive('small'){
+       .sidebar{
+        margin-left: 30px
+       }
+    }
 }

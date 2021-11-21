@@ -3,12 +3,25 @@
         border: none;
         color: $color-white-0;
         border-radius: 4px;
-        font-size: 14px;
+        font-size: $fs-0;
         background-color: $color-yellow-1;
         display: flex;
         align-items: center;
         cursor: pointer;
+        white-space: nowrap;
         &.space-right{
             margin-right: 16px;
         }
 }
+
+
+@include responsive('extra-large'){
+    .button-yellow{
+        padding: 8px 9px;
+        font-size: $fs-0 - 2;
+        &.space-right{
+            margin-right: 10px;
+        }
+    }
+}
+

@@ -40,12 +40,36 @@ function carousel(selector) {
     return next(), prev();
 }
 
+//sidebar
+const sidebarScreenSmall = document.querySelector('#sidebarScreenSmall');
+const navbarMobile = document.querySelector('.navbar_mobile');
+const navOverlay = document.querySelector('.nav__overlay');
+const buttonCloseSidebar = document.querySelector('.button-close-sidebar')
+function openSideBar(){
+    navbarMobile.style.transform =`translateX(-0px)`;
+    navOverlay.style.display = 'block';
+}
+sidebarScreenSmall.addEventListener('click', openSideBar);
+navOverlay.addEventListener('click',function(){
+    navbarMobile.style.transform =`translateX(100%)`;
+    navOverlay.style.display = 'none';
+})
+buttonCloseSidebar.addEventListener('click',function(){
+    navbarMobile.style.transform =`translateX(100%)`;
+    navOverlay.style.display = 'none';
+})
+
+
 
 //Event scroll
 const scrollMobile = document.querySelector('#scrollMobile');
 const scrollPC = document.querySelector('#scrollPC');
 const scrollSpo = document.querySelector('#scrollSpo');
 const scrollEco = document.querySelector('#scrollEco');
+const scrollMobileScreenSmall = document.querySelector('#scrollMobile_screenSmall');
+const scrollPCScreenSmall = document.querySelector('#scrollPC_screenSmall');
+const scrollSpoScreenSmall = document.querySelector('#scrollSpo_screenSmall');
+const scrollEcoScreenSmall = document.querySelector('#scrollEco_screenSmall');
 const contentLeft = document.querySelector('.content-left');
 const heightHeader = document.querySelector('.header').offsetHeight;
 const contentPC = document.querySelector('#pc').offsetTop -heightHeader;
@@ -77,6 +101,39 @@ function scollToContent() {
             behavior: 'smooth'
         })
     })
+    // screenSmall 
+    scrollMobileScreenSmall.addEventListener('click', function () {
+        contentLeft.scrollTo({
+            top: contentMobile,
+            behavior: 'smooth'
+        })
+        navbarMobile.style.transform =`translateX(100%)`;
+        navOverlay.style.display = 'none';
+    })
+    scrollPCScreenSmall.addEventListener('click', function () {
+        contentLeft.scrollTo({
+            top: contentPC,
+            behavior: 'smooth'
+        })
+        navbarMobile.style.transform =`translateX(100%)`;
+        navOverlay.style.display = 'none';
+    })
+    scrollSpoScreenSmall.addEventListener('click', function () {
+        contentLeft.scrollTo({
+            top: contentSpo,
+            behavior: 'smooth'
+        })
+        navbarMobile.style.transform =`translateX(100%)`;
+        navOverlay.style.display = 'none';
+    })
+    scrollEcoScreenSmall.addEventListener('click', function () {
+        contentLeft.scrollTo({
+            top: contentEco,
+            behavior: 'smooth'
+        })
+        navbarMobile.style.transform =`translateX(100%)`;
+        navOverlay.style.display = 'none';
+    })
 }
 
 //Event Active
@@ -88,8 +145,17 @@ itemsLi.forEach((item,index) =>{
     })
 })
 
+const itemsLiScreenSmall = document.querySelectorAll('.navbar_mobile ul li');
+itemsLiScreenSmall.forEach((item,index) =>{
+    item.addEventListener('click', function(){
+        document.querySelector('.navbar_mobile .active').classList.remove('active');
+        item.classList.add('active');
+    })
+})
+
+
+
 window.addEventListener('load', (event) => {
     carousel('carousel');
     scollToContent();
 });
-

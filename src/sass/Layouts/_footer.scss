@@ -4,11 +4,14 @@
     padding-top: 20px;
     padding-bottom: 27px;
     .footer-content{
-        width: 60%;
+        width: 70%;
         margin: auto;
         display: flex;
         justify-content: space-between;
         // align-items: center;
+    }
+    .footer-logo{
+        width: 20%;
     }
     .logo-text {
         font-family: "Encode Sans", sans-serif;
@@ -27,6 +30,7 @@
         margin-top: 2px;
     }
     .footer-contact {
+        width: 30%;
         h3 {
             font-family: "Encode Sans", sans-serif;
             line-height: 25px;
@@ -86,6 +90,7 @@
         }
     }
     .footer-address {
+        width: 50%;
     }
     .address-shared {
         margin-bottom: 15px;
@@ -108,6 +113,28 @@
             font-family: "Encode Sans", sans-serif;
             @include styleText($color-white-0, $fs-0 - 4, $fw-1);
             margin-top: 5px;
+        }
+    }
+    @include responsive("large"){
+        .footer-content{
+            width: 85%;
+        }
+    }
+    @include responsive("medium"){
+        .footer-content{
+            width: 75%;
+            flex-wrap: wrap;
+        }
+        .footer-logo{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .footer-contact{
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        .footer-address{
+            width: 100%;
         }
     }
 }
