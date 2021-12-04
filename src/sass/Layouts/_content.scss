@@ -4,12 +4,13 @@
     // margin-bottom: 22px;
 }
 .content-left {
-    width: 40%;
+    width: 35%;
     max-height: 938px;
     // height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y;
-    padding-left: 30px;
+    padding-left: 3.5%;
+    // padding-right:0.5%;
     &::-webkit-scrollbar {
         width: 12px;
     }
@@ -25,8 +26,8 @@
         box-shadow: inset 0 0 5px grey;
     }
     padding-top: 22px;
-    justify-content: center;
     .content-common {
+        // justify-content: space-between;
         display: flex;
         flex-wrap: wrap;
     }
@@ -154,7 +155,6 @@
     .content-left {
         padding-left: 30px;
         max-height: 1000px;
-        
     }
     .content-right {
         .content-slider {
@@ -167,15 +167,14 @@
         padding-left: 25px;
         max-height: 1032px;
     }
-    .content-brand{
+    .content-brand {
         .brand-top {
-     
-            .brand-top-left{
+            .brand-top-left {
                 width: 50%;
                 text-align: center;
                 margin-bottom: 10px;
             }
-            .brand-top-right{
+            .brand-top-right {
                 width: 50%;
                 justify-content: center;
             }
@@ -185,17 +184,15 @@
         .content-slider {
             width: 325%;
         }
-        .controls{
+        .controls {
             .arrow-left {
-                top:33%
+                top: 33%;
             }
-            .arrow-right{
+            .arrow-right {
                 top: 33%;
             }
         }
     }
-   
-   
 }
 
 @include responsive("large") {
@@ -207,37 +204,39 @@
         .content-slider {
             width: 330%;
         }
-        .controls{
+        .controls {
             .arrow-left {
-                top:32%
+                top: 32%;
             }
-            .arrow-right{
+            .arrow-right {
                 top: 32%;
             }
         }
     }
-    .content-brand{
+    .content-brand {
         .brand-top {
             flex-wrap: wrap;
-            .brand-top-left{
+            .brand-top-left {
                 width: 100%;
             }
-            .brand-top-right{
+            .brand-top-right {
                 width: 100%;
             }
         }
     }
-   
 }
 
 @include responsive("medium") {
-    .content{
+    .content {
         flex-wrap: wrap;
     }
-    .content-left{
+    .content-left {
         width: 100%;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
-    .content-right{
+    .content-right {
         width: 100%;
     }
     .content-right {
@@ -253,4 +252,3 @@
         }
     }
 }
-

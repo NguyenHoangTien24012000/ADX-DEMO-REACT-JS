@@ -13,18 +13,18 @@
     <!-- HEADER -->
     <header class="header">
         <div class="header-content">
-            <div class="nav__overlay"></div>
             <div class="logo">
                 <img src="./src/img/Group 9200.png" alt="adx">
             </div>
             <div class="navbar">
                 <ul class="navbar-list">
-                    <li class="navbar-item"><a href="#" class="active"  id="scrollPC">ADX PC</a> <span></span></li>
-                    <li class="navbar-item"><a href="#" id="scrollMobile">ADX MOBILE</a> <span></span></li>
-                    <li class="navbar-item"><a href="#"  id="scrollSpo">ADX SPONSOR</a> <span></span></li>
-                    <li class="navbar-item"><a href="#"  id="scrollEco">ADX ECOM</a></li>
+                    <li><a href="#" class="active navbar-item"  id="scrollPC">ADX PC</a> <span></span></li>
+                    <li><a href="#" class="navbar-item" id="scrollMobile">ADX MOBILE</a> <span></span></li>
+                    <li><a href="#" class="navbar-item" id="scrollSpo">ADX SPONSOR</a> <span></span></li>
+                    <li><a href="#" class="navbar-item" id="scrollEco">ADX ECOM</a></li>
                 </ul>
             </div>
+         
             <div class="navbar_mobile">
                 <div class="button-close-sidebar">
                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"/></svg>
@@ -38,24 +38,25 @@
             </div>
             <div class="search">
                 <div class="search-container">
-                    <input class="search__input" type="text" placeholder="Tất cả ngành hàng">
-                    <svg class="search-down" width="10" height="5" viewBox="0 0 10 5" fill="none"
+                    <div class="search__input"> <input  class="search__input_child" type="text" placeholder="Tất cả ngành hàng"></div>
+                    <div class="search-down"><svg width="10" height="5" viewBox="0 0 10 5" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0L5 5L10 0H0Z" fill="#212121" />
-                    </svg>
+                    </svg></div>
 
-                    <button class="button-search"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.5999 2.79997C6.32686 2.79997 5.10596 3.30568 4.20579 4.20585C3.30561 5.10603 2.7999 6.32693 2.7999 7.59997C2.7999 8.87301 3.30561 10.0939 4.20579 10.9941C5.10596 11.8943 6.32686 12.4 7.5999 12.4C8.87294 12.4 10.0938 11.8943 10.994 10.9941C11.8942 10.0939 12.3999 8.87301 12.3999 7.59997C12.3999 6.32693 11.8942 5.10603 10.994 4.20585C10.0938 3.30568 8.87294 2.79997 7.5999 2.79997ZM0.399902 7.59997C0.399758 6.46681 0.667073 5.34962 1.18011 4.33926C1.69314 3.32889 2.43741 2.45388 3.35238 1.7854C4.26735 1.11691 5.32718 0.673822 6.44568 0.492167C7.56418 0.310512 8.70976 0.395421 9.78926 0.739988C10.8688 1.08455 11.8517 1.67905 12.6581 2.47512C13.4645 3.2712 14.0717 4.24637 14.4301 5.32133C14.7886 6.39629 14.8883 7.54068 14.7211 8.66143C14.5539 9.78218 14.1245 10.8476 13.4679 11.7712L19.2483 17.5516C19.4669 17.7779 19.5878 18.081 19.5851 18.3956C19.5824 18.7103 19.4562 19.0113 19.2337 19.2338C19.0112 19.4562 18.7102 19.5824 18.3956 19.5852C18.0809 19.5879 17.7778 19.467 17.5515 19.2484L11.7723 13.4692C10.6951 14.2351 9.42792 14.6898 8.10951 14.7833C6.79111 14.8769 5.47239 14.6057 4.29786 13.9995C3.12334 13.3934 2.13833 12.4756 1.45077 11.3468C0.763215 10.218 0.399645 8.92169 0.399902 7.59997V7.59997Z"
-                                fill="black" />
-                        </svg>
-                    </button>
+                    <div class="button-search">  <button  class="button-search-child"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.5999 2.79997C6.32686 2.79997 5.10596 3.30568 4.20579 4.20585C3.30561 5.10603 2.7999 6.32693 2.7999 7.59997C2.7999 8.87301 3.30561 10.0939 4.20579 10.9941C5.10596 11.8943 6.32686 12.4 7.5999 12.4C8.87294 12.4 10.0938 11.8943 10.994 10.9941C11.8942 10.0939 12.3999 8.87301 12.3999 7.59997C12.3999 6.32693 11.8942 5.10603 10.994 4.20585C10.0938 3.30568 8.87294 2.79997 7.5999 2.79997ZM0.399902 7.59997C0.399758 6.46681 0.667073 5.34962 1.18011 4.33926C1.69314 3.32889 2.43741 2.45388 3.35238 1.7854C4.26735 1.11691 5.32718 0.673822 6.44568 0.492167C7.56418 0.310512 8.70976 0.395421 9.78926 0.739988C10.8688 1.08455 11.8517 1.67905 12.6581 2.47512C13.4645 3.2712 14.0717 4.24637 14.4301 5.32133C14.7886 6.39629 14.8883 7.54068 14.7211 8.66143C14.5539 9.78218 14.1245 10.8476 13.4679 11.7712L19.2483 17.5516C19.4669 17.7779 19.5878 18.081 19.5851 18.3956C19.5824 18.7103 19.4562 19.0113 19.2337 19.2338C19.0112 19.4562 18.7102 19.5824 18.3956 19.5852C18.0809 19.5879 17.7778 19.467 17.5515 19.2484L11.7723 13.4692C10.6951 14.2351 9.42792 14.6898 8.10951 14.7833C6.79111 14.8769 5.47239 14.6057 4.29786 13.9995C3.12334 13.3934 2.13833 12.4756 1.45077 11.3468C0.763215 10.218 0.399645 8.92169 0.399902 7.59997V7.59997Z"
+                            fill="black" />
+                    </svg>
+                </button></div>
                 </div>
             </div>
             <div class="sidebar" id="sidebarScreenSmall">
 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
             </div>
+            <div class="nav__overlay"></div>
         </div>
     </header>
 
@@ -71,312 +72,354 @@
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Kingsize - 1160x250px</h4> 
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9683.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Super Leaderboard - 980x90px</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9682.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Leaderboard - 728x90px</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9695.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Medium Rectangle - 300x250px</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9684.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Half page - 300x600px</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9681.png "alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Skycrape - 160x600px</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage1/Group 9680.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Kingsize Article - 660x300px</h4>
                     </div>
                 </div>
             </div>
             <div class="content-common" id="mobile">
-                <div class="content-item space-item hover-card-1 active1">
-                    <div class="content-img">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 2.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Top Banner - 640x320px</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 5.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Inpage - 375x750px</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 7.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Popup - 375x750</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 4.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Medium - 300x250px</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 3.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Native Medium - 300x250px</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 6.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>I-poster - 320x500px</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage2/Group 1.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>ICatfish - 375x100px</h4>
                     </div>
                 </div>
+
+              
             </div>
             <div class="content-common" id="sponsor">
-                <div class="content-item space-item hover-card-1 active1">
+                <div class="content-item space-item hover-card-1">
                     <div class="content-img">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9721.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>PC - Box 300x600px - 5 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9720.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>PC - Box 160x600px - 4 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9714.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>PC - Box Big Article - 4 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9719.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>PC - Box 300x250px - 3 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9797.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Mục tin bài liên quan</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9716.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>PC - Native - Sapo</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9798.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Lightbox tin liên quan</h4>
+                    </div>
+                </div>
+                <div class="content-item space-item hover-card-1">
+                    <div class="content-img ">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9717.png" alt="detail">
+                        <div class="icon-check">
+                            <img src="./src/img/check_circle.png" alt="icon-check">
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <h4>PC - Instream 700</h4>
+                    </div>
+                </div>
+                <div class="content-item space-item hover-card-1">
+                    <div class="content-img ">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9743.png" alt="detail">
+                        <div class="icon-check">
+                            <img src="./src/img/check_circle.png" alt="icon-check">
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <h4>PC - In-article 780</h4>
                     </div>
                 </div>
             </div>
+            <div class="content-common">
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9814.png" alt="detail">
+                        <div class="icon-check">
+                            <img src="./src/img/check_circle.png" alt="icon-check">
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <h4>Medium - 300x250px</h4>
+                    </div>
+                </div>
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9763.png" alt="detail">
+                        <div class="icon-check">
+                            <img src="./src/img/check_circle.png" alt="icon-check">
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <h4>Tin bài liên quan</h4>
+                    </div>
+                </div>
+                <div class="content-item space-item hover-card-1 ">
+                    <div class="content-img content-img-mobile">
+                        <img class="img-product" src="./src/img/imgpage3/Group 9811.png" alt="detail">
+                        <div class="icon-check">
+                            <img src="./src/img/check_circle.png" alt="icon-check">
+                        </div>
+                    </div>
+                    <div class="content-description">
+                        <h4>Dưới Sapo bài chi tiết</h4>
+                    </div>
+                </div>
+               
+               
+
+              
+            </div>
             <div class="content-common" id="ecom">
-                <div class="content-item space-item hover-card-1 active1">
+                <div class="content-item space-item hover-card-1">
                     <div class="content-img">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage4/Group 9779.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Box 980x90px - 4 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage4/Group 9775.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Box 300x600px - 3 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage4/Group 9774.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Box Big Article - 3 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage4/Group 9773.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Box Big Article - 3 items</h4>
                     </div>
                 </div>
                 <div class="content-item space-item hover-card-1">
                     <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
+                        <img class="img-product" src="./src/img/imgpage4/Group 9778.png" alt="detail">
                         <div class="icon-check">
                             <img src="./src/img/check_circle.png" alt="icon-check">
                         </div>
                     </div>
                     <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
+                        <h4>Box Big Article - 3 items</h4>
                     </div>
                 </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
-                        <div class="icon-check">
-                            <img src="./src/img/check_circle.png" alt="icon-check">
-                        </div>
-                    </div>
-                    <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
-                    </div>
-                </div>
-                <div class="content-item space-item hover-card-1">
-                    <div class="content-img ">
-                        <img class="img-product" src="./src/img/imgpage1/Group 9713 (1).png" alt="detail">
-                        <div class="icon-check">
-                            <img src="./src/img/check_circle.png" alt="icon-check">
-                        </div>
-                    </div>
-                    <div class="content-description">
-                        <h4>Kingsize - 1160x250px</h4>
-                    </div>
-                </div>
+
             </div>
 
 
