@@ -34,7 +34,7 @@
 }
 .content-right {
     width: 64%;
-    padding: 25px 40px;
+    padding: 25px 3.5%;
     overflow: hidden;
     .text-content {
         @include styleText($color-black-0, $fs-0, $fw-2);
@@ -48,13 +48,13 @@
     .slider-item {
         width: 100%;
         &.space-right {
-            margin-right: 50px;
+            margin-right: 80px;
         }
     }
     .content-slider {
         transition: all 0.5s;
         display: flex;
-        width: 315%;
+        width: 320%;
         // transform: translateX(-200px);
     }
     .selection-demo {

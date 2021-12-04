@@ -34,7 +34,7 @@ body {
   cursor: pointer;
 }
 .header .navbar {
-  width: 68%;
+  width: 70%;
 }
 .header .navbar .navbar-list {
   list-style: none;
@@ -67,7 +67,7 @@ body {
 }
 .header .search {
   display: flex;
-  width: 25%;
+  width: 23%;
   height: 46px;
   justify-content: flex-end;
   margin: 11px 0;
@@ -292,7 +292,7 @@ body {
 
 .content-right {
   width: 64%;
-  padding: 25px 40px;
+  padding: 25px 3.5%;
   overflow: hidden;
 }
 .content-right .text-content {
@@ -310,12 +310,12 @@ body {
   width: 100%;
 }
 .content-right .slider-item.space-right {
-  margin-right: 50px;
+  margin-right: 80px;
 }
 .content-right .content-slider {
   transition: all 0.5s;
   display: flex;
-  width: 315%;
+  width: 320%;
 }
 .content-right .selection-demo {
   justify-content: center;
