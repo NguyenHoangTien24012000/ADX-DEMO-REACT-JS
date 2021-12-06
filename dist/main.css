@@ -68,11 +68,12 @@ body {
 .header .search {
   display: flex;
   width: 23%;
-  height: 46px;
+  height: 68px;
+  align-items: center;
   justify-content: flex-end;
-  margin: 11px 0;
 }
 .header .search-container {
+  height: 46px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -181,6 +182,52 @@ body {
   right: 20px;
   cursor: pointer;
   color: #2589eb;
+}
+@media screen and (max-width: 1900px) {
+  .header {
+    height: 56px;
+  }
+  .header .logo {
+    height: 56px;
+    width: 6%;
+  }
+  .header .logo .logo-img {
+    max-width: 68%;
+  }
+  .header .navbar {
+    height: 55px;
+  }
+  .header .navbar .navbar-list .navbar-item {
+    font-size: 13px;
+    margin: 0 18px;
+  }
+  .header .search {
+    height: 55px;
+  }
+  .header .search-container {
+    height: 38px;
+  }
+  .header .search-container .search__input {
+    width: 70%;
+  }
+  .header .search-container .search__input .search__input_child {
+    padding: 10px 12px;
+  }
+  .header .search-container .search__input .search__input_child::placeholder {
+    font-size: 13px;
+  }
+  .header .search-container .search-down {
+    width: 12%;
+  }
+  .header .search-container .button-search {
+    width: 18%;
+  }
+  .header .search-container .button-search .button-search-child {
+    height: 36px;
+  }
+  .header .search-container .button-search .button-search-child .icon-search {
+    max-width: 18px;
+  }
 }
 @media screen and (max-width: 1350px) {
   .header .logo {
@@ -292,7 +339,7 @@ body {
 
 .content-right {
   width: 64%;
-  padding: 25px 3.5%;
+  padding: 25px 3.2%;
   overflow: hidden;
 }
 .content-right .text-content {
@@ -381,7 +428,6 @@ body {
 }
 .content-right .brand-top-left p {
   color: #9E9E9E;
-  font-size: 14px;
   color: #9E9E9E;
   font-size: 14px;
   font-weight: 400;
@@ -420,6 +466,23 @@ body {
   font-weight: 400;
 }
 
+@media screen and (max-width: 1900px) {
+  .content-right .text-content {
+    font-size: 12px;
+  }
+  .content-right .brand-top-left h4 {
+    font-size: 16px;
+  }
+  .content-right .brand-top-left p {
+    font-size: 12px;
+  }
+  .content-right .brand-bottom-left p {
+    font-size: 12px;
+  }
+  .content-right .brand-bottom-right p {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 1350px) {
   .content-left {
     padding-left: 30px;
@@ -734,9 +797,15 @@ body {
 .content-common .content-item.active1 .content-description h4 {
   color: #fff;
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1900px) {
   .content-common .content-description h4 {
-    font-size: 13px;
+    font-size: 12px;
+  }
+  .content-common .content-img {
+    padding: 80px 0 32px;
+  }
+  .content-common .content-img-mobile {
+    padding: 38px 0 20px;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -764,7 +833,7 @@ body {
     padding: 70px 0 30px;
   }
   .content-common .content-img-mobile {
-    padding: 35px 0 22px;
+    padding: 35px 0 20px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -784,7 +853,7 @@ body {
     padding: 65px 0 25px;
   }
   .content-common .content-img-mobile {
-    padding: 33px 0 19px;
+    padding: 33px 0 18px;
   }
   .content-common .content-item.active1 .icon-check {
     top: 8px;

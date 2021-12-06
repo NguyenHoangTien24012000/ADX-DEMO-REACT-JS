@@ -34,7 +34,7 @@
 }
 .content-right {
     width: 64%;
-    padding: 25px 3.5%;
+    padding: 25px 3.2%;
     overflow: hidden;
     .text-content {
         @include styleText($color-black-0, $fs-0, $fw-2);
@@ -116,7 +116,6 @@
         }
         p {
             color: $color-black-4;
-            font-size: 14px;
             @include styleText($color-black-4, $fs-0, $fw-1);
         }
     }
@@ -149,6 +148,33 @@
             @include styleText($color-black-0, $fs-0, $fw-1);
         }
     }
+}
+
+@include responsive("screen-3"){
+    .content-right{
+        .text-content{
+            font-size: $fs-0 - 2;
+        }
+        .brand-top-left {
+            h4 {
+                font-size: $fs-0 + 2;
+            }
+            p {
+                font-size: $fs-0 - 2;
+            }
+        }
+        .brand-bottom-left{
+            p{
+                font-size: $fs-0 - 2;
+            }
+        }
+        .brand-bottom-right{
+            p{
+                font-size: $fs-0 - 2;
+            }
+        }
+    }
+   
 }
 
 @include responsive("screen-1") {

@@ -10,13 +10,6 @@ module.exports = {
         path : path.resolve(__dirname, 'build')
     },
     mode : 'development',
-    plugins : [
-        new CleanWebpackPlugin,
-        new HtmlWebpackPlugin({
-            title : 'ADX_DEMO',
-            filename : 'index.html'
-        })
-    ],
     watch :true,
     devtool : 'inline-source-map',
     optimization: {
