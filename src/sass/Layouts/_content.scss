@@ -62,7 +62,7 @@
         display: flex;
         align-items: center;
         margin: auto;
-        min-height: 600px;
+        height: 600px;
         background-color: $color-black-2;
         border-radius: $border-radius-2;
         margin-bottom: 32px;
@@ -149,11 +149,64 @@
         }
     }
 }
-
+ .brand-top-left {
+        width: 50%;
+        h4 {
+            @include styleText($color-black-0, $fs-0 + 4, $fw-3);
+            padding-bottom: 11px;
+        }
+        p {
+            color: $color-black-4;
+            @include styleText($color-black-4, $fs-0, $fw-1);
+        }
+    }
+    .brand-top-right {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .brand-bottom {
+        border-top: 1px solid $color-black-2;
+        padding: 19px 23px 21px 19px;
+        display: flex;
+    }
+    .brand-bottom-left {
+        width: 35%;
+        border-right: 1px solid $color-black-2;
+        p {
+            margin-bottom: 12px;
+            @include styleText($color-black-0, $fs-0, $fw-3);
+        }
+        span {
+            color: $color-black-4;
+        }
+    }
+    .brand-bottom-right {
+        width: 60%;
+        margin-left: 19px;
+        p {
+            line-height: 22px;
+            @include styleText($color-black-0, $fs-0, $fw-1);
+        }
+    }
 @include responsive("screen-3"){
+    .content-left{
+        max-height: 920px;
+    }
     .content-right{
         .text-content{
             font-size: $fs-0 - 2;
+            margin-bottom: 36px;
+        }
+        .selection-demo{
+            height: 534px;
+            margin-bottom: 28px;
+        }
+        .brand-top {
+            padding: 15px 23px 12px 17px;
+        }
+        .brand-bottom {
+            padding: 17px 21px 19px 17px;
         }
         .brand-top-left {
             h4 {
@@ -180,11 +233,24 @@
 @include responsive("screen-1") {
     .content-left {
         padding-left: 30px;
-        max-height: 1000px;
+        max-height: 880px;
     }
     .content-right {
+        .text-content{
+            margin-bottom: 26px;
+        }
         .content-slider {
             width: 320%;
+        }
+        .brand-top {
+            padding: 13px 21px 10px 15px;
+        }
+        .brand-bottom {
+            padding: 15px 19px 17px 15px;
+        }
+        .selection-demo{
+            height: 490px;
+            margin-bottom: 26px;
         }
         .slider-item {
             &.space-right {
@@ -197,10 +263,11 @@
     
     .content-left {
         padding-left: 25px;
-        max-height: 1032px;
+        max-height: 770px;
     }
     .content-brand {
         .brand-top {
+            padding: 11px 19px 8px 13px;
             .brand-top-left {
                 width: 50%;
                 text-align: center;
@@ -211,11 +278,22 @@
                 justify-content: center;
             }
         }
+    
+        .brand-bottom {
+            padding: 13px 17px 15px 13px;
+        }
     }
     .content-right {
+        .text-content{
+            margin-bottom: 20px;
+        }
         // padding: 25px 3%;
         .content-slider {
             width: 325%;
+        }
+        .selection-demo{
+            height: 430px;
+            margin-bottom: 20px;
         }
         .controls {
             .arrow-left {
@@ -231,11 +309,18 @@
 @include responsive("large") {
     .content-left {
         padding-left: 20px;
-        max-height: 1078px;
+        max-height: 660px;
     }
     .content-right {
+        .text-content{
+            margin-bottom: 16px;
+        }
         .content-slider {
             width: 330%;
+        }
+        .selection-demo{
+            height: 300px;
+            margin-bottom: 15px;
         }
         .controls {
             .arrow-left {
@@ -283,6 +368,26 @@
                 margin-right: 52px;
             }
         }
+        .brand-top-left {
+            h4 {
+                font-size: $fs-0 + 2;
+                padding-bottom: 8px;
+            }
+            p {
+               font-size: $fs-0 - 1;
+            }
+        }
+        .brand-bottom-left {
+            p {
+                margin-bottom: 10px;
+                font-size: $fs-0 - 1;
+            }
+        }
+        .brand-bottom-right {
+            p {
+                font-size: $fs-0 -1;
+            }
+        }
     }
 }
 
@@ -295,3 +400,10 @@
         }
     }
 }
+
+
+
+
+
+
+

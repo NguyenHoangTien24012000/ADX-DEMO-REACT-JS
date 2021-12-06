@@ -12,6 +12,9 @@
         &.space-right{
             margin-right: 16px;
         }
+        .button-text{
+            padding-right:6px ;
+        }
 }
 
 
@@ -21,6 +24,16 @@
         font-size: $fs-0 - 2;
         &.space-right{
             margin-right: 10px;
+        }
+    }
+}
+
+@include responsive('large'){
+    .button-yellow{
+        padding: 6px 7px;
+        font-size: $fs-0 - 3;
+        &.space-right{
+            margin-right: 8px;
         }
     }
 }

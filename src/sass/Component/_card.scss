@@ -22,6 +22,9 @@
         .img-product {
             width: 55%;
         }
+        .style-img-1{
+            width: 47%;
+        }
     }
     .content-description {
         padding-top: 24px;
@@ -32,7 +35,13 @@
         h4 {
             @include styleText($color-black-1, $fw-3, $fs-0);
         }
+   
     }
+    .text-two-line{
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
+    
     .space-item {
         margin-bottom: 20px;
         margin-right: 20px;
@@ -56,6 +65,7 @@
                     color: $color-white-0;
                 }
             }
+            
         }
         &.active1 {
             .icon-check {
@@ -114,6 +124,10 @@
                 font-size: $fs-0 - 5;
             }
         }
+        .text-two-line{
+            padding-top: 6px;
+            padding-bottom: 8px;
+        }
         .content-img {
             padding: 70px 0 30px;
         }
@@ -131,9 +145,12 @@
             padding-top: 14px;
             padding-bottom: 12px;
             h4 {
-                white-space: nowrap;
                 font-size: $fs-0 - 7;
             }
+        }
+        .text-two-line{
+            padding-top: 3px;
+            padding-bottom: 2px;
         }
         .content-img {
             padding: 65px 0 25px;
@@ -171,8 +188,8 @@
             padding-top: 20px;
             padding-bottom: 19px;
             h4 {
-                white-space: nowrap;
-                font-size: $fs-0 - 1;
+                // white-space: nowrap;
+                font-size: $fs-0 - 2;
             }
         }
         .content-img {
@@ -211,9 +228,13 @@
             padding-top: 18px;
             padding-bottom: 17px;
             h4 {
-                white-space: nowrap;
+                // white-space: nowrap;
                 font-size: $fs-0 - 2;
             }
+        }
+        .text-two-line{
+            padding-top: 6px;
+            padding-bottom: 8px;
         }
     }
 
