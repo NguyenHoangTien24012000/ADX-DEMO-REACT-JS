@@ -34,7 +34,7 @@
 }
 .content-right {
     width: 64%;
-    padding: 25px 3.2%;
+    padding: 25px 3%;
     overflow: hidden;
     .text-content {
         @include styleText($color-black-0, $fs-0, $fw-2);
@@ -186,9 +186,15 @@
         .content-slider {
             width: 320%;
         }
+        .slider-item {
+            &.space-right {
+                margin-right: 54px;
+            }
+        }
     }
 }
 @include responsive("extra-large") {
+    
     .content-left {
         padding-left: 25px;
         max-height: 1032px;
@@ -207,6 +213,7 @@
         }
     }
     .content-right {
+        // padding: 25px 3%;
         .content-slider {
             width: 325%;
         }
@@ -238,6 +245,7 @@
                 top: 32%;
             }
         }
+      
     }
     .content-brand {
         .brand-top {
@@ -253,6 +261,7 @@
 }
 
 @include responsive("medium") {
+    // padding: 25px 0%;
     .content {
         flex-wrap: wrap;
     }
@@ -269,12 +278,20 @@
         .content-slider {
             width: 322%;
         }
+        .slider-item {
+            &.space-right {
+                margin-right: 52px;
+            }
+        }
     }
 }
-@include responsive("medium") {
+
+@include responsive("small"){
     .content-right {
-        .content-slider {
-            width: 330%;
+        .slider-item {
+            &.space-right {
+                margin-right: 34px;
+            }
         }
     }
 }
