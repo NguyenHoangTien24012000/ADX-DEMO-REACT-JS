@@ -290,11 +290,11 @@
 
     @include responsive("large") {
         height:  52px;
-        // .logo{
-        //     .logo-img{
-        //         max-width: 90%;
-        //     }
-        // }
+        .logo{
+            .logo-img{
+                max-width: 95%;
+            }
+        }
         .navbar{
             .navbar-list{
                 .navbar-item{
@@ -320,7 +320,7 @@
     @include responsive("medium") {
          .logo{
             .logo-img{
-                max-width: 66%;
+                max-width: 64%;
             }
         }
         .navbar {
