@@ -587,7 +587,8 @@ body {
 
 @media screen and (max-width: 1920px) {
   .content-left {
-    max-height: 920px;
+    max-height: 900px;
+    padding-bottom: 150px;
   }
 
   .content-right .text-content {
@@ -614,7 +615,7 @@ body {
 @media screen and (max-width: 1350px) {
   .content-left {
     padding-left: 30px;
-    max-height: 880px;
+    max-height: 800px;
   }
 
   .content-right .text-content {
@@ -649,7 +650,8 @@ body {
 @media screen and (max-width: 1200px) {
   .content-left {
     padding-left: 25px;
-    max-height: 770px;
+    max-height: 700px;
+    padding-bottom: 200px;
   }
 
   .content-right .content-slider {
@@ -689,8 +691,7 @@ body {
 @media screen and (max-width: 992px) {
   .content-left {
     padding-left: 20px;
-    max-height: 660px;
-    padding-bottom: 100px;
+    max-height: 600px;
   }
 
   .content-right .text-content {
