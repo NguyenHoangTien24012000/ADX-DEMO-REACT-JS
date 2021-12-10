@@ -30,8 +30,8 @@
         }
     }
     @include responsive("large") {
-        padding: 5px 6px;
-        font-size: $fs-0 - 5;
+        padding: 4px 5px;
+        font-size: $fs-0 - 6;
         &.space-right {
             margin-right: 5px;
         }

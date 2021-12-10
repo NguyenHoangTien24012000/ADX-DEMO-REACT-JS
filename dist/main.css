@@ -1260,8 +1260,8 @@ body {
 }
 @media screen and (max-width: 992px) {
   .button-yellow {
-    padding: 5px 6px;
-    font-size: 9px;
+    padding: 4px 5px;
+    font-size: 8px;
   }
   .button-yellow.space-right {
     margin-right: 5px;
