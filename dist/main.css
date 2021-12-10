@@ -457,7 +457,7 @@ body {
   display: flex;
   align-items: center;
   margin: auto;
-  aspect-ratio: 100/54;
+  aspect-ratio: 16/9;
   background-color: #E0E0E0;
   border-radius: 16px;
   margin-bottom: 32px;
