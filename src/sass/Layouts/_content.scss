@@ -184,8 +184,8 @@
 }
 @include responsive("screen-3") {
     .content-left {
-        max-height: 900px;
-        padding-bottom: 150px;
+        max-height: 800px;
+        padding-bottom: 200px;
     }
     .content-right {
         .text-content {
@@ -217,15 +217,18 @@
         }
     }
 }
-
-@include responsive("screen-4") {
-    
+@include responsive("screen-2"){
+    .content-left {
+        max-height: 700px;
+        padding-bottom: 200px;
+    }
 }
 
 @include responsive("screen-1") {
     .content-left {
         padding-left: 30px;
-        max-height: 800px;
+        max-height: 650px;
+        padding-bottom: 200px;
     }
     .content-right {
         .text-content {
@@ -269,8 +272,8 @@
 @include responsive("extra-large") {
     .content-left {
         padding-left: 25px;
-        max-height: 700px;
-        padding-bottom: 200px;
+        max-height: 520px;
+        padding-bottom: 300px;
     }
 
     .content-right {
