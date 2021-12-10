@@ -291,6 +291,9 @@ body {
     padding-bottom: 8px;
     font-size: 9px;
   }
+  .header .navbar .navbar-list .navbar-item.active {
+    border-bottom: 2px solid #fff;
+  }
   .header .search {
     margin: 4px 0;
   }
