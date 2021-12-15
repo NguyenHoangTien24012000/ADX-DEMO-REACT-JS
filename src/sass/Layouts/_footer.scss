@@ -4,7 +4,7 @@
     padding-top: 20px;
     padding-bottom: 27px;
     .footer-content{
-        width: 60%;
+        width: 90%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -102,139 +102,7 @@
             margin-top: 5px;
         }
     }
-    @include responsive("screen-2"){
-        padding-top: 15px;
-        padding-bottom: 22px;
-        .logo-text{
-            font-size: $fs-2 - 1;
-            margin-top: 6px;
-        }
-        .logo-bottom {
-            margin-top: 5px;
-        }
-        .logo-bottom-left {
-            margin-right: 6px;
-        }
-        .footer-contact{
-            h3{
-                font-size: $fs-1 - 6;
-                margin-bottom: 10px;
-            }
-        }
-        .detail-contact {
-            margin-bottom: 8px;
-            img {
-                width: 9px;
-                height: 9px;
-            }
-            p {
-                line-height: 10px;
-                font-size: $fs-0 - 6;
-                margin-left: 5px;
-            }
-        }
-        .social-media {
-            margin-top: 2px;
-        }
-        .logo-contact  {
-            width: 19px;
-            height: 19px;
-            line-height: 23px;
-            &.space-right{
-                margin-right: 4px;
-            }
-        }
-        .address-shared {
-            margin-bottom: 6px;
-            h3 {
-                line-height: 20px;
-                font-size: $fs-1 - 6;
-                // margin-bottom: 2px;
-            }
-        }
-        .address-detail {
-            img {
-                width: 10px;
-                margin-right: 4px;
-            }
-            p {
-                font-size: $fs-0 - 6;
-                margin-top: 5px;
-            }
-        }
-
-    }
-    @include responsive("extra-large"){
-        .footer-content{
-            width: 65%;
-        }
-
-        padding-top: 13px;
-        padding-bottom: 20px;
-        .logo-text{
-            font-size: $fs-2 - 2;
-            margin-top: 5px;
-        }
-        .logo-bottom {
-            margin-top: 4px;
-        }
-        .logo-bottom-left {
-            margin-right: 5px;
-        }
-        .footer-contact{
-            h3{
-                font-size: $fs-1 - 7;
-                margin-bottom: 8px;
-            }
-        }
-        .detail-contact {
-            margin-bottom: 6px;
-            img {
-                width: 7px;
-                height: 7px;
-            }
-            p {
-                line-height: 8px;
-                font-size: $fs-0 - 7;
-                // margin-left: 5px;
-            }
-        }
-        .social-media {
-            margin-top: 2px;
-        }
-        .logo-contact  {
-            width: 17px;
-            height: 17px;
-            line-height: 21px;
-            &.space-right{
-                margin-right: 3px;
-            }
-        }
-        .address-shared {
-            margin-bottom: 4px;
-            h3 {
-                line-height: 18px;
-                font-size: $fs-1 - 7;
-                // margin-bottom: 2px;
-            }
-        }
-        .address-detail {
-            img {
-                width: 8px;
-                margin-right: 4px;
-            }
-            p {
-                font-size: $fs-0 - 7;
-                margin-top: 3px;
-            }
-        }
-
-    }
-    @include responsive("extra-large"){
-        .footer-content{
-            width: 80%;
-        }
-    }
+    
     @include responsive("medium"){
         .footer-content{
             width: 60%;
@@ -252,53 +120,5 @@
             width: 100%;
         }
     }
-    @include responsive("small"){
-        padding-top: 10px;
-        padding-bottom: 17px;
-        .logo-text{
-            font-size: $fs-2 - 3;
-            margin-top: 3px;
-        }
-        .logo-bottom {
-            margin-top: 4px;
-        }
-        .footer-contact{
-            margin-top: 5px;
-            h3{
-                font-size: $fs-1 - 8;
-                margin-bottom: 6px;
-            }
-        }
-        .detail-contact {
-            margin-bottom: 4px;
-         
-            p {
-                line-height: 8px;
-                font-size: $fs-0 - 8;
-                // margin-left: 5px;
-            }
-        }
-        .social-media {
-            margin-top: 2px;
-        }
-        .address-shared {
-            margin-bottom: 3px;
-            h3 {
-                line-height: 16px;
-                font-size: $fs-1 - 8;
-                // margin-bottom: 2px;
-            }
-        }
-        .address-detail {
-            img {
-                width: 7px;
-                margin-right: 4px;
-            }
-            p {
-                font-size: $fs-0 - 8;
-                margin-top: 3px;
-            }
-        }
-
-    }
+   
 }

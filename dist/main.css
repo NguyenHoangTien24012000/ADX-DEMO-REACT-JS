@@ -19,7 +19,7 @@ body {
 .header {
   display: flex;
   align-items: center;
-  background: #2589eb;
+  background: #4b4b4b;
 }
 .header .header-content {
   width: 93%;
@@ -411,13 +411,8 @@ body {
   padding: 25px 3%;
   overflow: hidden;
 }
-.content-right .text-content {
-  color: #212121;
-  font-size: 14px;
-  font-weight: 500;
-  margin-bottom: 46px;
-}
 .content-right .content-carousel {
+  margin-top: 40px;
   width: 100%;
   position: relative;
   justify-content: flex-start;
@@ -433,13 +428,13 @@ body {
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 5;
-  margin-top: 25%;
+  margin-top: 22%;
 }
 .content-right .content-carousel .arrow-left {
-  left: 40px;
+  left: 0%;
 }
 .content-right .content-carousel .arrow-right {
-  right: 40px;
+  right: 0%;
 }
 .content-right .slider-item {
   width: 100%;
@@ -453,6 +448,7 @@ body {
   width: 325%;
 }
 .content-right .selection-demo {
+  width: 85%;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -756,7 +752,7 @@ body {
   padding-bottom: 27px;
 }
 .footer .footer-content {
-  width: 60%;
+  width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -860,129 +856,6 @@ body {
   font-weight: 400;
   margin-top: 5px;
 }
-@media screen and (max-width: 1450px) {
-  .footer {
-    padding-top: 15px;
-    padding-bottom: 22px;
-  }
-  .footer .logo-text {
-    font-size: 7px;
-    margin-top: 6px;
-  }
-  .footer .logo-bottom {
-    margin-top: 5px;
-  }
-  .footer .logo-bottom-left {
-    margin-right: 6px;
-  }
-  .footer .footer-contact h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  .footer .detail-contact {
-    margin-bottom: 8px;
-  }
-  .footer .detail-contact img {
-    width: 9px;
-    height: 9px;
-  }
-  .footer .detail-contact p {
-    line-height: 10px;
-    font-size: 8px;
-    margin-left: 5px;
-  }
-  .footer .social-media {
-    margin-top: 2px;
-  }
-  .footer .logo-contact {
-    width: 19px;
-    height: 19px;
-    line-height: 23px;
-  }
-  .footer .logo-contact.space-right {
-    margin-right: 4px;
-  }
-  .footer .address-shared {
-    margin-bottom: 6px;
-  }
-  .footer .address-shared h3 {
-    line-height: 20px;
-    font-size: 18px;
-  }
-  .footer .address-detail img {
-    width: 10px;
-    margin-right: 4px;
-  }
-  .footer .address-detail p {
-    font-size: 8px;
-    margin-top: 5px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .footer {
-    padding-top: 13px;
-    padding-bottom: 20px;
-  }
-  .footer .footer-content {
-    width: 65%;
-  }
-  .footer .logo-text {
-    font-size: 6px;
-    margin-top: 5px;
-  }
-  .footer .logo-bottom {
-    margin-top: 4px;
-  }
-  .footer .logo-bottom-left {
-    margin-right: 5px;
-  }
-  .footer .footer-contact h3 {
-    font-size: 17px;
-    margin-bottom: 8px;
-  }
-  .footer .detail-contact {
-    margin-bottom: 6px;
-  }
-  .footer .detail-contact img {
-    width: 7px;
-    height: 7px;
-  }
-  .footer .detail-contact p {
-    line-height: 8px;
-    font-size: 7px;
-  }
-  .footer .social-media {
-    margin-top: 2px;
-  }
-  .footer .logo-contact {
-    width: 17px;
-    height: 17px;
-    line-height: 21px;
-  }
-  .footer .logo-contact.space-right {
-    margin-right: 3px;
-  }
-  .footer .address-shared {
-    margin-bottom: 4px;
-  }
-  .footer .address-shared h3 {
-    line-height: 18px;
-    font-size: 17px;
-  }
-  .footer .address-detail img {
-    width: 8px;
-    margin-right: 4px;
-  }
-  .footer .address-detail p {
-    font-size: 7px;
-    margin-top: 3px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .footer .footer-content {
-    width: 80%;
-  }
-}
 @media screen and (max-width: 768px) {
   .footer .footer-content {
     width: 60%;
@@ -998,51 +871,6 @@ body {
   }
   .footer .footer-address {
     width: 100%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .footer {
-    padding-top: 10px;
-    padding-bottom: 17px;
-  }
-  .footer .logo-text {
-    font-size: 5px;
-    margin-top: 3px;
-  }
-  .footer .logo-bottom {
-    margin-top: 4px;
-  }
-  .footer .footer-contact {
-    margin-top: 5px;
-  }
-  .footer .footer-contact h3 {
-    font-size: 16px;
-    margin-bottom: 6px;
-  }
-  .footer .detail-contact {
-    margin-bottom: 4px;
-  }
-  .footer .detail-contact p {
-    line-height: 8px;
-    font-size: 6px;
-  }
-  .footer .social-media {
-    margin-top: 2px;
-  }
-  .footer .address-shared {
-    margin-bottom: 3px;
-  }
-  .footer .address-shared h3 {
-    line-height: 16px;
-    font-size: 16px;
-  }
-  .footer .address-detail img {
-    width: 7px;
-    margin-right: 4px;
-  }
-  .footer .address-detail p {
-    font-size: 6px;
-    margin-top: 3px;
   }
 }
 
