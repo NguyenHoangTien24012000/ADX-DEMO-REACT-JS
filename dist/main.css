@@ -385,7 +385,7 @@ body {
 
 .content-left {
   width: 35%;
-  max-height: 900px;
+  max-height: 800px;
   overflow-y: auto;
   scroll-snap-type: y;
   padding-left: 3.5%;
@@ -416,7 +416,6 @@ body {
   overflow: hidden;
 }
 .content-right .content-carousel {
-  margin-top: 4%;
   width: 100%;
   position: relative;
   justify-content: flex-start;
@@ -460,7 +459,7 @@ body {
   aspect-ratio: 16/9;
   background-color: #E0E0E0;
   border-radius: 16px;
-  margin-bottom: 6%;
+  margin-bottom: 22px;
 }
 .content-right .selection-demo-text {
   color: #000;
@@ -474,7 +473,7 @@ body {
 }
 .content-right .brand-top {
   display: flex;
-  padding: 17px 25px 14px 19px;
+  padding: 15px 20px 10px;
   align-items: center;
 }
 .content-right .brand-top-left {
@@ -484,7 +483,7 @@ body {
   color: #212121;
   font-size: 18px;
   font-weight: 700;
-  padding-bottom: 11px;
+  padding-bottom: 6px;
 }
 .content-right .brand-top-left p {
   color: #9E9E9E;
@@ -499,7 +498,7 @@ body {
 }
 .content-right .brand-bottom {
   border-top: 1px solid #E0E0E0;
-  padding: 19px 23px 21px 19px;
+  padding: 10px 20px;
   display: flex;
 }
 .content-right .brand-bottom-left {
@@ -507,7 +506,7 @@ body {
   border-right: 1px solid #E0E0E0;
 }
 .content-right .brand-bottom-left p {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   color: #212121;
   font-size: 14px;
   font-weight: 700;
@@ -526,81 +525,27 @@ body {
   font-weight: 400;
 }
 
-.brand-top-left {
-  width: 50%;
-}
-.brand-top-left h4 {
-  color: #212121;
-  font-size: 18px;
-  font-weight: 700;
-  padding-bottom: 11px;
-}
-.brand-top-left p {
-  color: #9E9E9E;
-  color: #9E9E9E;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.brand-top-right {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.brand-bottom {
-  border-top: 1px solid #E0E0E0;
-  padding: 19px 23px 21px 19px;
-  display: flex;
-}
-
-.brand-bottom-left {
-  width: 35%;
-  border-right: 1px solid #E0E0E0;
-}
-.brand-bottom-left p {
-  margin-bottom: 12px;
-  color: #212121;
-  font-size: 14px;
-  font-weight: 700;
-}
-.brand-bottom-left span {
-  color: #9E9E9E;
-}
-
-.brand-bottom-right {
-  width: 60%;
-  margin-left: 19px;
-}
-.brand-bottom-right p {
-  line-height: 22px;
-  color: #212121;
-  font-size: 14px;
-  font-weight: 400;
-}
-
 @media screen and (max-width: 1920px) {
   .content-left {
-    max-height: 550px;
+    max-height: 380px;
     padding-bottom: 200px;
   }
 
   .content-right .brand-top-left h4 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .content-right .brand-top-left p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .content-right .brand-bottom-left p {
-    font-size: 12px;
+    font-size: 11px;
   }
   .content-right .brand-bottom-right p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 1450px) {
   .content-left {
-    max-height: 500px;
     padding-bottom: 200px;
   }
 }
@@ -617,24 +562,24 @@ body {
     margin-right: 54px;
   }
   .content-right .brand-top-left h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
   .content-right .brand-top-left p {
-    font-size: 11px;
+    font-size: 10px;
   }
   .content-right .brand-bottom-left p {
-    font-size: 11px;
+    font-size: 10px;
     margin-bottom: 8px;
   }
   .content-right .brand-bottom-right p {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 20px;
   }
 }
 @media screen and (max-width: 1200px) {
   .content-left {
     padding-left: 25px;
-    max-height: 410px;
+    max-height: 250px;
     padding-bottom: 300px;
   }
 
@@ -642,20 +587,11 @@ body {
     width: 325%;
   }
 
-  .brand-top {
-    padding: 15px 23px 12px 17px;
-  }
-
-  .brand-bottom {
-    padding: 17px 21px 19px 17px;
-  }
-
   .brand-top-left h4 {
-    font-size: 14px;
-    padding-bottom: 8px;
+    font-size: 11px;
   }
   .brand-top-left p {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .brand-bottom-left p {
@@ -670,18 +606,12 @@ body {
 @media screen and (max-width: 992px) {
   .content-left {
     padding-left: 20px;
-    max-height: 360px;
+    max-height: 230px;
     padding-bottom: 350px;
   }
 
   .content-right .content-slider {
     width: 330%;
-  }
-  .content-right .brand-top {
-    padding: 13px 21px 10px 15px;
-  }
-  .content-right .brand-bottom {
-    padding: 15px 19px 13px 15px;
   }
   .content-right .brand-top-left h4 {
     font-size: 12px;

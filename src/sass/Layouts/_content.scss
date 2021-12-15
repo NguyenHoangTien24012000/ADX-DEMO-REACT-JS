@@ -5,7 +5,7 @@
 }
 .content-left {
     width: 35%;
-    max-height: 900px;
+    max-height: 800px;
     // height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y;
@@ -37,7 +37,6 @@
     padding: 25px 3%;
     overflow: hidden;
     .content-carousel {
-        margin-top: 4%;
         width: 100%;
         position: relative;
         justify-content: flex-start;
@@ -83,7 +82,7 @@
         aspect-ratio: 16 / 9;
         background-color: $color-black-2;
         border-radius: $border-radius-2;
-        margin-bottom: 6%;
+        margin-bottom: 22px;
     }
 
     .selection-demo-text {
@@ -96,14 +95,14 @@
     }
     .brand-top {
         display: flex;
-        padding: 17px 25px 14px 19px;
+        padding: 15px 20px 10px;
         align-items: center;
     }
     .brand-top-left {
         width: 50%;
         h4 {
             @include styleText($color-black-0, $fs-0 + 4, $fw-3);
-            padding-bottom: 11px;
+            padding-bottom: 6px;
         }
         p {
             color: $color-black-4;
@@ -117,14 +116,14 @@
     }
     .brand-bottom {
         border-top: 1px solid $color-black-2;
-        padding: 19px 23px 21px 19px;
+        padding: 10px 20px;
         display: flex;
     }
     .brand-bottom-left {
         width: 35%;
         border-right: 1px solid $color-black-2;
         p {
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             @include styleText($color-black-0, $fs-0, $fw-3);
         }
         span {
@@ -140,49 +139,11 @@
         }
     }
 }
-.brand-top-left {
-    width: 50%;
-    h4 {
-        @include styleText($color-black-0, $fs-0 + 4, $fw-3);
-        padding-bottom: 11px;
-    }
-    p {
-        color: $color-black-4;
-        @include styleText($color-black-4, $fs-0, $fw-1);
-    }
-}
-.brand-top-right {
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-}
-.brand-bottom {
-    border-top: 1px solid $color-black-2;
-    padding: 19px 23px 21px 19px;
-    display: flex;
-}
-.brand-bottom-left {
-    width: 35%;
-    border-right: 1px solid $color-black-2;
-    p {
-        margin-bottom: 12px;
-        @include styleText($color-black-0, $fs-0, $fw-3);
-    }
-    span {
-        color: $color-black-4;
-    }
-}
-.brand-bottom-right {
-    width: 60%;
-    margin-left: 19px;
-    p {
-        line-height: 22px;
-        @include styleText($color-black-0, $fs-0, $fw-1);
-    }
-}
+
+
 @include responsive("screen-3") {
     .content-left {
-        max-height: 550px;
+        max-height: 380px;
         padding-bottom: 200px;
     }
     .content-right {
@@ -190,27 +151,26 @@
 
         .brand-top-left {
             h4 {
-                font-size: $fs-0 + 2;
+                font-size: $fs-0 + 1;
             }
             p {
-                font-size: $fs-0 - 2;
+                font-size: $fs-0 - 3;
             }
         }
         .brand-bottom-left {
             p {
-                font-size: $fs-0 - 2;
+                font-size: $fs-0 - 3;
             }
         }
         .brand-bottom-right {
             p {
-                font-size: $fs-0 - 2;
+                font-size: $fs-0 - 3;
             }
         }
     }
 }
 @include responsive("screen-2"){
     .content-left {
-        max-height: 500px;
         padding-bottom: 200px;
     }
 }
@@ -218,7 +178,6 @@
 @include responsive("screen-1") {
     .content-left {
         padding-left: 30px;
-     
         padding-bottom: 200px;
     }
     .content-right {
@@ -233,21 +192,21 @@
         }
         .brand-top-left {
             h4 {
-                font-size: $fs-0 + 1;
+                font-size: $fs-0;
             }
             p {
-                font-size: $fs-0 - 3;
+                font-size: $fs-0 - 4;
             }
         }
         .brand-bottom-left {
             p {
-                font-size: $fs-0 - 3;
+                font-size: $fs-0 - 4;
                 margin-bottom: 8px;
             }
         }
         .brand-bottom-right {
             p {
-                font-size: $fs-0 - 3;
+                font-size: $fs-0 - 4;
                 line-height: 20px;
             }
         }
@@ -256,7 +215,7 @@
 @include responsive("extra-large") {
     .content-left {
         padding-left: 25px;
-        max-height: 410px;
+        max-height: 250px;
         padding-bottom: 300px;
     }
 
@@ -265,19 +224,12 @@
             width: 325%;
         }  
     }
-    .brand-top {
-        padding: 15px 23px 12px 17px;
-    }
-    .brand-bottom {
-        padding: 17px 21px 19px 17px;
-    }
     .brand-top-left {
         h4 {
-            font-size: $fs-0;
-            padding-bottom: 8px;
+            font-size: $fs-0 - 3;
         }
         p {
-            font-size: $fs-0 - 4;
+            font-size: $fs-0 - 6;
         }
     }
     .brand-bottom-left {
@@ -296,19 +248,13 @@
 @include responsive("large") {
     .content-left {
         padding-left: 20px;
-        max-height: 360px;
+        max-height: 230px;
         padding-bottom: 350px;
     }
     .content-right {
 
         .content-slider {
             width: 330%;
-        }
-        .brand-top {
-            padding: 13px 21px 10px 15px;
-        }
-        .brand-bottom {
-            padding: 15px 19px 13px 15px;
         }
         .brand-top-left {
             h4 {
