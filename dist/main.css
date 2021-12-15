@@ -412,7 +412,7 @@ body {
   overflow: hidden;
 }
 .content-right .content-carousel {
-  margin-top: 40px;
+  margin-top: 4%;
   width: 100%;
   position: relative;
   justify-content: flex-start;
