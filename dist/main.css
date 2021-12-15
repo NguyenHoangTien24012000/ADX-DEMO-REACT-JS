@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;700&display=swap");
+}
 @font-face {
   font-family: "Encode Sans", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap");
@@ -9,7 +13,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #212121;
   line-height: 21px;
@@ -381,7 +385,7 @@ body {
 
 .content-left {
   width: 35%;
-  max-height: 1000px;
+  max-height: 900px;
   overflow-y: auto;
   scroll-snap-type: y;
   padding-left: 3.5%;
@@ -428,7 +432,7 @@ body {
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   z-index: 5;
-  margin-top: 22%;
+  margin-top: 16%;
 }
 .content-right .content-carousel .arrow-left {
   left: 0%;
@@ -448,7 +452,7 @@ body {
   width: 325%;
 }
 .content-right .selection-demo {
-  width: 85%;
+  width: 68%;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -456,7 +460,7 @@ body {
   aspect-ratio: 16/9;
   background-color: #E0E0E0;
   border-radius: 16px;
-  margin-bottom: 32px;
+  margin-bottom: 6%;
 }
 .content-right .selection-demo-text {
   color: #000;
@@ -577,16 +581,10 @@ body {
 
 @media screen and (max-width: 1920px) {
   .content-left {
-    max-height: 800px;
+    max-height: 550px;
     padding-bottom: 200px;
   }
 
-  .content-right .text-content {
-    margin-bottom: 36px;
-  }
-  .content-right .selection-demo {
-    margin-bottom: 28px;
-  }
   .content-right .brand-top-left h4 {
     font-size: 16px;
   }
@@ -602,26 +600,18 @@ body {
 }
 @media screen and (max-width: 1450px) {
   .content-left {
-    max-height: 700px;
+    max-height: 500px;
     padding-bottom: 200px;
   }
 }
 @media screen and (max-width: 1350px) {
   .content-left {
     padding-left: 30px;
-    max-height: 650px;
     padding-bottom: 200px;
   }
 
-  .content-right .text-content {
-    font-size: 11px;
-    margin-bottom: 16px;
-  }
   .content-right .content-slider {
     width: 320%;
-  }
-  .content-right .selection-demo {
-    margin-bottom: 26px;
   }
   .content-right .slider-item.space-right {
     margin-right: 54px;
@@ -644,15 +634,12 @@ body {
 @media screen and (max-width: 1200px) {
   .content-left {
     padding-left: 25px;
-    max-height: 520px;
+    max-height: 410px;
     padding-bottom: 300px;
   }
 
   .content-right .content-slider {
     width: 325%;
-  }
-  .content-right .selection-demo {
-    margin-bottom: 20px;
   }
 
   .brand-top {
@@ -683,19 +670,12 @@ body {
 @media screen and (max-width: 992px) {
   .content-left {
     padding-left: 20px;
-    max-height: 400px;
+    max-height: 360px;
     padding-bottom: 350px;
   }
 
-  .content-right .text-content {
-    font-size: 10px;
-    margin-bottom: 14px;
-  }
   .content-right .content-slider {
     width: 330%;
-  }
-  .content-right .selection-demo {
-    margin-bottom: 15px;
   }
   .content-right .brand-top {
     padding: 13px 21px 10px 15px;
@@ -749,7 +729,7 @@ body {
 .footer {
   background-color: #4b4b4b;
   padding-top: 20px;
-  padding-bottom: 27px;
+  padding-bottom: 10px;
 }
 .footer .footer-content {
   width: 90%;
@@ -761,20 +741,20 @@ body {
   width: 20%;
 }
 .footer .footer-logo .logo-img {
-  width: 50%;
+  width: 100px;
 }
 .footer .logo-text {
   font-family: "Encode Sans", sans-serif;
   line-height: 10px;
   color: #fff;
-  font-size: 8px;
-  font-weight: 400;
+  font-size: 11px;
+  font-weight: 300;
   margin-top: 13px;
 }
 .footer .logo-bottom {
   margin-top: 8px;
   display: flex;
-  width: 50%;
+  align-items: center;
 }
 .footer .logo-bottom .logo-bottom-img {
   width: 100%;
@@ -858,7 +838,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer .footer-content {
-    width: 60%;
+    width: 80%;
     flex-wrap: wrap;
   }
   .footer .footer-logo {

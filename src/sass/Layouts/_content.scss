@@ -5,7 +5,7 @@
 }
 .content-left {
     width: 35%;
-    max-height: 1000px;
+    max-height: 900px;
     // height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y;
@@ -53,7 +53,7 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             z-index: 5;
             // top: 204px;
-            margin-top: 22%;
+            margin-top: 16%;
         }
         .arrow-left {
             left: 0%;
@@ -75,7 +75,7 @@
         // transform: translateX(-200px);
     }
     .selection-demo {
-        width: 85%;
+        width: 68%;
         justify-content: center;
         display: flex;
         align-items: center;
@@ -83,7 +83,7 @@
         aspect-ratio: 16 / 9;
         background-color: $color-black-2;
         border-radius: $border-radius-2;
-        margin-bottom: 32px;
+        margin-bottom: 6%;
     }
 
     .selection-demo-text {
@@ -182,18 +182,11 @@
 }
 @include responsive("screen-3") {
     .content-left {
-        max-height: 800px;
+        max-height: 550px;
         padding-bottom: 200px;
     }
     .content-right {
-        .text-content {
-            // font-size: $fs-0 - 2;
-            margin-bottom: 36px;
-        }
-        .selection-demo {
-            // height: 534px;
-            margin-bottom: 28px;
-        }
+     
 
         .brand-top-left {
             h4 {
@@ -217,7 +210,7 @@
 }
 @include responsive("screen-2"){
     .content-left {
-        max-height: 700px;
+        max-height: 500px;
         padding-bottom: 200px;
     }
 }
@@ -225,21 +218,14 @@
 @include responsive("screen-1") {
     .content-left {
         padding-left: 30px;
-        max-height: 650px;
+     
         padding-bottom: 200px;
     }
     .content-right {
-        .text-content {
-            font-size: $fs-0 - 3;
-            margin-bottom: 16px;
-        }
         .content-slider {
             width: 320%;
         }
-        .selection-demo {
-            // height: 490px;
-            margin-bottom: 26px;
-        }
+     
         .slider-item {
             &.space-right {
                 margin-right: 54px;
@@ -270,19 +256,14 @@
 @include responsive("extra-large") {
     .content-left {
         padding-left: 25px;
-        max-height: 520px;
+        max-height: 410px;
         padding-bottom: 300px;
     }
 
     .content-right {
         .content-slider {
             width: 325%;
-        }
-        .selection-demo {
-            // height: 430px;
-            margin-bottom: 20px;
-        }
-      
+        }  
     }
     .brand-top {
         padding: 15px 23px 12px 17px;
@@ -315,23 +296,14 @@
 @include responsive("large") {
     .content-left {
         padding-left: 20px;
-        max-height: 400px;
+        max-height: 360px;
         padding-bottom: 350px;
     }
     .content-right {
-        .text-content {
-            font-size: $fs-0 - 4;
-            margin-bottom: 14px;
-        }
 
         .content-slider {
             width: 330%;
         }
-        .selection-demo {
-            // height: 300px;
-            margin-bottom: 15px;
-        }
-      
         .brand-top {
             padding: 13px 21px 10px 15px;
         }
