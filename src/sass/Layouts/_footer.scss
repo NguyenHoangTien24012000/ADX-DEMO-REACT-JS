@@ -4,7 +4,7 @@
     padding-top: 20px;
     padding-bottom: 10px;
     .footer-content{
-        width: 90%;
+        width: 82%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -56,7 +56,7 @@
         p {
             font-family: "Encode Sans", sans-serif;
             line-height: 12px;
-            @include styleText($color-white-0, $fs-0 - 4, $fw-1);
+            @include styleText($color-white-0, $fs-0 - 3, $fw-1);
             margin-left: 7px;
         }
     }
@@ -99,7 +99,7 @@
         }
         p {
             font-family: "Encode Sans", sans-serif;
-            @include styleText($color-white-0, $fs-0 - 4, $fw-1);
+            @include styleText($color-white-0, $fs-0 - 3, $fw-1);
             margin-top: 5px;
         }
     }
